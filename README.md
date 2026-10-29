@@ -1,6 +1,6 @@
 # InstallGenshin · Windows 自律触发器
 
-双击 **启动 InstallGenshin.cmd**。浏览器会打开本地控制台；命令窗口保持运行时，应用才会监测进程。关闭命令窗口即可退出。
+双击 **Start-InstallGenshin.cmd**。浏览器会打开本地控制台；命令窗口保持运行时，应用才会监测进程。关闭命令窗口即可退出。
 
 选择一个正在运行的程序，或直接输入进程文件名（例如 `VALORANT-Win64-Shipping.exe`）。设置惩罚页面和冷却时间，开启规则并保存。当该进程从未运行变为运行时，应用会打开所选网页。默认惩罚页面是[原神官方下载页](https://genshin.hoyoverse.com/en-us/download)。
 
