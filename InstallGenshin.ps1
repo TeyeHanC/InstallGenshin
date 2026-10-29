@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $appRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$dataRoot = Join-Path $env:APPDATA 'FocusOrbit'
+$dataRoot = Join-Path $env:APPDATA 'InstallGenshin'
 New-Item -ItemType Directory -Path $dataRoot -Force | Out-Null
 $settingsPath = Join-Path $dataRoot 'settings.json'
 $historyPath = Join-Path $dataRoot 'history.json'
@@ -96,10 +96,10 @@ $lastCheck = [DateTime]::MinValue
 $listener = [Net.Sockets.TcpListener]::new([Net.IPAddress]::Parse('127.0.0.1'), $port)
 try { $listener.Start() }
 catch {
-    Write-Host "无法启动本地服务 $baseUrl。请关闭之前启动的 Focus Orbit。" -ForegroundColor Red
+    Write-Host "无法启动本地服务 $baseUrl。请关闭之前启动的 InstallGenshin。" -ForegroundColor Red
     exit 1
 }
-Write-Host "Focus Orbit 已启动：$baseUrl" -ForegroundColor Cyan
+Write-Host "InstallGenshin 已启动：$baseUrl" -ForegroundColor Cyan
 Start-Process $baseUrl
 $pending = $listener.BeginAcceptTcpClient($null, $null)
 try {

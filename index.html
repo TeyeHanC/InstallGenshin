@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#101728">
-  <title>Focus Orbit · 自律轨道</title>
+  <title>InstallGenshin · 自律轨道</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div class="shell">
     <aside class="sidebar">
-      <a class="brand" href="/" aria-label="Focus Orbit 首页"><span class="brand-mark">✦</span><span>focus<span class="brand-light">orbit</span><small>自律轨道</small></span></a>
+      <a class="brand" href="/" aria-label="InstallGenshin 首页"><span class="brand-mark">✦</span><span>install<span class="brand-light">genshin</span><small>开瓦送原 · 自律触发器</small></span></a>
       <nav aria-label="主导航"><a class="nav-item active" href="#dashboard"><span>◫</span> 控制台</a><a class="nav-item" href="#rule"><span>✳</span> 我的规则</a><a class="nav-item" href="#activity"><span>◷</span> 触发记录</a></nav>
       <div class="sidebar-bottom"><div class="little-orbit"><span></span></div><strong>把选择权交给未来的你。</strong><p>每次打开，都先想起自己的目标。</p><div class="sidebar-foot">FOCUS ORBIT <span>v1.0</span></div></div>
     </aside>
@@ -24,7 +24,7 @@
         <div class="workspace-grid"><section class="panel rule-panel"><div class="panel-head"><div class="panel-icon violet">⌘</div><div><h3>当我打开…</h3><p>检测到应用启动时触发</p></div><span class="number-badge">01</span></div><label for="processName" class="field-label">触发应用</label><div class="input-wrap"><span class="input-icon">▣</span><input id="processName" autocomplete="off" spellcheck="false" placeholder="例如 VALORANT-Win64-Shipping.exe"><button id="refreshProcesses" type="button" title="刷新运行中的应用">↻</button></div><div class="field-hint">可以输入 .exe 进程名，或从下面选择正在运行的应用。</div><div class="preset-row"><button class="chip selected" type="button" data-process="VALORANT-Win64-Shipping.exe">✦ 无畏契约</button><button class="chip" type="button" id="showProcesses">＋ 选择运行中的应用</button></div><div id="processList" class="process-list hidden"></div><div class="divider"></div><div class="panel-head action-heading"><div class="panel-icon coral">↗</div><div><h3>就提醒我…</h3><p>选择触发后的动作</p></div><span class="number-badge">02</span></div><div class="action-options"><label class="action-option chosen"><input type="radio" name="action" value="genshin" checked><span class="action-emoji">🌠</span><span class="action-label"><strong>打开原神官方下载页</strong><small>你的指定“惩罚” · 官方网站</small></span><span class="radio-mark"></span></label><label class="action-option"><input type="radio" name="action" value="custom"><span class="action-emoji">🔗</span><span class="action-label"><strong>打开自定义网页</strong><small>写一句话、放一个提醒页面都可以</small></span><span class="radio-mark"></span></label></div><div id="customUrlField" class="custom-url hidden"><label for="customUrl" class="field-label">网页地址</label><input id="customUrl" type="url" placeholder="https://example.com" inputmode="url"></div></section>
         <aside class="side-stack"><section class="panel settings-panel"><div class="panel-title"><span class="settings-spark">✦</span><h3>守护设置</h3></div><div class="setting-row"><div><strong>启用这条规则</strong><p>开启后在后台守护</p></div><label class="switch"><input id="enabled" type="checkbox"><span></span></label></div><div class="setting-row cooldown-row"><div><strong>冷却时间</strong><p>避免短时间内反复触发</p></div><div class="select-wrap"><select id="cooldown"><option value="0">无</option><option value="5">5 分钟</option><option value="15">15 分钟</option><option value="30" selected>30 分钟</option><option value="60">1 小时</option><option value="180">3 小时</option><option value="1440">24 小时</option></select></div></div><button id="saveButton" class="primary-button" type="button">保存规则 <span>→</span></button><button id="testButton" class="text-button" type="button">测试已保存的触发动作 ↗</button><div id="message" role="status" aria-live="polite"></div></section><section class="quote-card"><span class="quote-mark">“</span><p>暂停一秒，不是退后。<br>是把方向盘重新握在自己手里。</p><div class="quote-line"></div><span>给今天的自己</span><div class="quote-star">✳</div></section></aside></div>
         <section class="activity-section" id="activity"><div class="section-heading activity-head"><div><span class="section-kicker">YOUR JOURNEY</span><h2>最近的轨迹</h2><p>每一次提醒，都是一次重新选择的机会。</p></div><span class="step-label">02 / 02</span></div><div id="activityList" class="activity-list"><div class="empty"><span>✦</span><strong>旅程刚刚开始</strong><p>保存规则后，触发记录会出现在这里。</p></div></div></section>
-        <footer>Focus Orbit · 为更有意识的选择而做 <span>✦</span></footer>
+        <footer>InstallGenshin · 为更有意识的选择而做 <span>✦</span></footer>
       </div>
     </main>
   </div>
