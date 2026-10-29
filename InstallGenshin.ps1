@@ -140,7 +140,7 @@ try {
             } elseif ($method -eq 'POST' -and $path -eq '/api/settings') {
                 $inputData = $request.body | ConvertFrom-Json
                 $name = ([string]$inputData.processName).Trim()
-                if ($name -notmatch '^[a-zA-Z0-9_ .-]{1,120}$') { Reply-Json $client 400 @{ error = '请输入有效的进程文件名' }; continue }
+                if ($name.Length -lt 1 -or $name.Length -gt 120 -or $name -match '[\\/:*?"<>|\[\]\r\n]') { Reply-Json $client 400 @{ error = '请输入有效的进程文件名' }; continue }
                 if ($name -notmatch '\.exe$') { $name += '.exe' }
                 $action = if ($inputData.action -eq 'custom') { 'custom' } else { 'genshin' }
                 $url = if ($action -eq 'custom') { Safe-Url $inputData.customUrl } else { $null }
