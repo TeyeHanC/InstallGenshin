@@ -4,7 +4,7 @@
 
 > InstallGenshin 目前只会打开网页，**不会下载或安装原神**，也不会阻止触发程序运行。
 
-**[体验在线交互预览](https://teyehanc.github.io/InstallGenshin/)** · 预览页只展示界面和模拟操作；检测电脑上运行的程序需要使用下面的 Windows 本地版。
+**[体验在线交互预览](https://raw.githack.com/TeyeHanC/InstallGenshin/main/docs/index.html)** · 预览通过第三方静态文件镜像提供，更新可能延迟几分钟。它只展示界面和模拟操作；检测电脑上运行的程序需要使用下面的 Windows 本地版。
 
 ## Windows 本地版：从下载到第一次触发
 
@@ -45,4 +45,4 @@
 
 在线预览是静态演示页，设置保存在预览浏览器的本地存储中；“模拟一次触发”只添加演示记录。它不会读取电脑进程，也不会替代 Windows 本地版。
 
-> 开发说明：源码位于仓库根目录；`docs/` 是用于 GitHub Pages 的静态预览。当前尚未在 Windows 实机完成端到端验证。
+> 开发说明：源码位于仓库根目录；`docs/` 是静态预览源码。若要改用 GitHub Pages，在仓库 **Settings → Pages** 选择 **Deploy from a branch → main → /docs → Save**。当前尚未在 Windows 实机完成端到端验证。
